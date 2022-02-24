@@ -171,54 +171,28 @@
 												autoplay="autoplay"
 												loop="loop"
 												controls="controls"
+												width="100%"
+												muted="muted"
 											>
 												<source
-													src="assets/img/portfolio/HMM/045_0.mp4"
+													src="assets/img/portfolio/cross_val.mp4"
 												/>
 											</video>
 										</center>
 									</div>
 									<div class="swiper-slide">
-										<center>
-											<video
-												autobuffer="autobuffer"
-												autoplay="autoplay"
-												loop="loop"
-												controls="controls"
-											>
-												<source
-													src="assets/img/portfolio/HMM/047_0.mp4"
-												/>
-											</video>
-										</center>
+										<img
+											src="assets/img/portfolio/decision-tree.png"
+											class="img-fluid"
+											alt=""
+										/>
 									</div>
-									<div class="swiper-slide" a>
-										<center>
-											<video
-												autobuffer="autobuffer"
-												autoplay="autoplay"
-												loop="loop"
-												controls="controls"
-											>
-												<source
-													src="assets/img/portfolio/HMM/051_0.mp4"
-												/>
-											</video>
-										</center>
-									</div>
-									<div class="swiper-slide" id="test">
-										<center>
-											<video
-												autobuffer="autobuffer"
-												autoplay="autoplay"
-												loop="loop"
-												controls="controls"
-											>
-												<source
-													src="assets/img/portfolio/HMM/066_0.mp4"
-												/>
-											</video>
-										</center>
+									<div class="swiper-slide">
+										<img
+											src="assets/img/portfolio/random-forests.jpg"
+											class="img-fluid"
+											alt=""
+										/>
 									</div>
 								</div>
 								<div class="swiper-pagination"></div>
@@ -230,49 +204,57 @@
 								<h3>Project information</h3>
 								<ul>
 									<li>
-										<strong>Category</strong>: Pattern
-										Recognition
+										<strong>Category</strong>: AI Modeling
+										and Prediction
 									</li>
 									<li><strong>Language</strong>: Python</li>
 									<li>
-										<strong>Project date</strong>: December,
+										<strong>Project date</strong>: October,
 										2021
 									</li>
 									<li>
-										<strong>GitHub:</strong><br /><a
-											href="https://github.gatech.edu/ssherrill3/6601_assignment6"
-											>https://github.gatech.edu/ssherrill3/6601_assignment6</a
+										<strong>Video References:</strong
+										><br /><a
+											href="https://cdnapisec.kaltura.com/html5/html5lib/v2.89/mwEmbedFrame.php/p/2019031/uiconf_id/40436601?wid=1_qcf7vz46&iframeembed=true&playerId=kaltura_player_&flashvars[playlistAPI.kpl0Id]=1_07j7dcqa&flashvars[ks]=&&flashvars[imageDefaultDuration]=30&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[forceMobileHTML5]=true&flashvars[nextPrevBtn.plugin]=true&flashvars[hotspots.plugin]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[playlistAPI.playlistUrl]=https://canvasgatechtest.kaf.kaltura.com/playlist/details/{playlistAPI.kpl0Id}/categoryid/141697431"
+											>Georgia Tech OMSCS - Artificial
+											Intelligence Course</a
 										>
 									</li>
 									<li>
-										<strong>Image Sources:</strong><br /><a
-											href="https://github.gatech.edu/omscs6601/assignment_6"
-											>https://github.gatech.edu/omscs6601/assignment_6</a
+										<strong>Image Reference:</strong
+										><br /><a
+											href="https://www.analyticsvidhya.com/blog/2020/12/lets-open-the-black-box-of-random-forests/"
+											>Analytics Vidhya</a
 										>
 									</li>
 								</ul>
 							</div>
 							<div class="portfolio-description">
-								<h2>Hidden Markov Models</h2>
+								<h2>Decision Trees & Random Forests</h2>
 								<p>
-									The goal of this project was to build an
-									American Sign Language (ASL) word
-									recognizer, using measurments captured from
-									ASL research videos. The measurments
-									represented the Y-coordinates of the
-									speaker's right hand. These measurments were
-									used to build hidden Markov models (HMM's),
-									representing the probabilistic pattern of a
-									given word. The model was trained using data
-									from videos of a speaker saying "buy",
-									"house", and "car". Building the models
-									involved calculating the transition
-									probabilities and Gaussian distribution of
-									each state, for each word. Finally, Viterbi
-									Trellises were constructed and used to
-									predict the likelihood of a given word by
-									identifying the shortest traversal path
-									between states.
+									The goal of this project was to build, train
+									and test decision tree models to perform
+									multi-class classification. The trees were
+									trained on the entire dataset, using k-fold
+									cross validation (illustrated on Slide 1),
+									to ensure all data contributed to the
+									training. Each tree was created by randomly
+									selecting a subset of the provided data and
+									then randomly selecting attributes of that
+									data to learn from. Gini impurity and
+									information gain metrics were calculated and
+									used to recursively build the initial
+									decision trees, maximizing the purity of the
+									division of the data. Finally, a collection
+									of these decision trees was used to generate
+									data outcome predictions, which were then
+									averaged to produce a single prediction.
+									Ultimately, my program was able to generate
+									predictions with over 77% accuracy.
+									Vectorization, by use of the Numpy library,
+									was used throughout the program while
+									working with the day to improve program
+									efficiency.
 								</p>
 							</div>
 						</div>
