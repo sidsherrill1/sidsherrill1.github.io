@@ -165,60 +165,67 @@
 								<div class="swiper-wrapper align-items-center">
 									<!-- <div> -->
 									<div class="swiper-slide">
-										<center>
-											<video
-												autobuffer="autobuffer"
-												autoplay="autoplay"
-												loop="loop"
-												controls="controls"
-											>
-												<source
-													src="assets/img/portfolio/HMM/045_0.mp4"
-												/>
-											</video>
-										</center>
+										<img
+											src="assets/img/portfolio/isolation-player/1.png"
+											class="img-fluid"
+											alt=""
+										/>
 									</div>
 									<div class="swiper-slide">
-										<center>
-											<video
-												autobuffer="autobuffer"
-												autoplay="autoplay"
-												loop="loop"
-												controls="controls"
-											>
-												<source
-													src="assets/img/portfolio/HMM/047_0.mp4"
-												/>
-											</video>
-										</center>
+										<img
+											src="assets/img/portfolio/isolation-player/2.png"
+											class="img-fluid"
+											alt=""
+										/>
 									</div>
 									<div class="swiper-slide" a>
-										<center>
-											<video
-												autobuffer="autobuffer"
-												autoplay="autoplay"
-												loop="loop"
-												controls="controls"
-											>
-												<source
-													src="assets/img/portfolio/HMM/051_0.mp4"
-												/>
-											</video>
-										</center>
+										<img
+											src="assets/img/portfolio/isolation-player/3.png"
+											class="img-fluid"
+											alt=""
+										/>
 									</div>
-									<div class="swiper-slide" id="test">
-										<center>
-											<video
-												autobuffer="autobuffer"
-												autoplay="autoplay"
-												loop="loop"
-												controls="controls"
-											>
-												<source
-													src="assets/img/portfolio/HMM/066_0.mp4"
-												/>
-											</video>
-										</center>
+									<div class="swiper-slide">
+										<img
+											src="assets/img/portfolio/isolation-player/ff_1.PNG"
+											class="img-fluid"
+											alt=""
+										/>
+									</div>
+									<div class="swiper-slide">
+										<img
+											src="assets/img/portfolio/isolation-player/ff_2.PNG"
+											class="img-fluid"
+											alt=""
+										/>
+									</div>
+									<div class="swiper-slide" a>
+										<img
+											src="assets/img/portfolio/isolation-player/ff_3.PNG"
+											class="img-fluid"
+											alt=""
+										/>
+									</div>
+									<div class="swiper-slide">
+										<img
+											src="assets/img/portfolio/isolation-player/sn_1.png"
+											class="img-fluid"
+											alt=""
+										/>
+									</div>
+									<div class="swiper-slide">
+										<img
+											src="assets/img/portfolio/isolation-player/sn_2.png"
+											class="img-fluid"
+											alt=""
+										/>
+									</div>
+									<div class="swiper-slide" a>
+										<img
+											src="assets/img/portfolio/isolation-player/sn_3.png"
+											class="img-fluid"
+											alt=""
+										/>
 									</div>
 								</div>
 								<div class="swiper-pagination"></div>
@@ -229,50 +236,73 @@
 							<div class="portfolio-info">
 								<h3>Project information</h3>
 								<ul>
-									<li>
-										<strong>Category</strong>: Pattern
-										Recognition
-									</li>
+									<li><strong>Category</strong>: AI</li>
 									<li><strong>Language</strong>: Python</li>
 									<li>
-										<strong>Project date</strong>: December,
-										2021
+										<strong>Project date</strong>:
+										September, 2021
 									</li>
 									<li>
 										<strong>GitHub:</strong><br /><a
-											href="https://github.gatech.edu/ssherrill3/6601_assignment6"
-											>https://github.gatech.edu/ssherrill3/6601_assignment6</a
+											href="https://github.gatech.edu/ssherrill3/6601_assignment_2"
+											>https://github.gatech.edu/ssherrill3/6601_assignment_2</a
 										>
 									</li>
 									<li>
-										<strong>Image Sources:</strong><br /><a
-											href="https://github.gatech.edu/omscs6601/assignment_6"
-											>https://github.gatech.edu/omscs6601/assignment_6</a
+										<strong
+											>Images & Game Description
+											Sources:</strong
+										><br /><a
+											href="https://github.gatech.edu/omscs6601/assignment_2"
+											>https://github.gatech.edu/omscs6601/assignment_2</a
 										>
 									</li>
 								</ul>
 							</div>
 							<div class="portfolio-description">
-								<h2>Hidden Markov Models</h2>
+								<h2>Isolation Game AI</h2>
 								<p>
-									The goal of this project was to build an
-									American Sign Language (ASL) word
-									recognizer, using measurments captured from
-									ASL research videos. The measurments
-									represented the Y-coordinates of the
-									speaker's right hand. These measurments were
-									used to build hidden Markov models (HMM's),
-									representing the probabilistic pattern of a
-									given word. The model was trained using data
-									from videos of a speaker saying "buy",
-									"house", and "car". Building the models
-									involved calculating the transition
-									probabilities and Gaussian distribution of
-									each state, for each word. Finally, Viterbi
-									Trellises were constructed and used to
-									predict the likelihood of a given word by
-									identifying the shortest traversal path
-									between states.
+									This project involved implementing the
+									minimax algorithm with alpha-beta pruning to
+									create an AI that can plan and win a
+									varation of Skid Isolation. Georgia Tech's
+									AI Instructions described the game in the
+									following way:
+								</p>
+								<p style="font-style: italic">
+									"The rules of Skid Isolation are a variation
+									of the original Isolation. In the original
+									form of the game there are two players, each
+									with their own game piece, and a 7-by-7 grid
+									of squares. At the beginning of the game,
+									the first player places their piece on any
+									square. The second player follows suit, and
+									places their piece on any one of the
+									available squares. From that point on, the
+									players alternate turns moving their piece
+									like a queen in chess (any number of open
+									squares vertically, horizontally, or
+									diagonally). When the piece is moved, the
+									square that was previously occupied is
+									blocked, and cannot be used for the
+									remainder of the game. The first player who
+									is unable to move their queen loses.
+								</p>
+								<p style="font-style: italic">
+									In this variant called the Skid Isolation,
+									each player leaves behind a trace when they
+									move their queen. We say the piece/queen
+									"skids", and as a result the skid places a
+									permanent block in the previously occupied
+									block and the block "just before" the
+									player's current position, through which the
+									piece/queen passed. The opponent cannot move
+									on or through squares blocked by this skid."
+								</p>
+								<p>
+									The slide images illustrate this game. In
+									implementing my solution, I was able to
+									achieve an 85% win ratio.
 								</p>
 							</div>
 						</div>
