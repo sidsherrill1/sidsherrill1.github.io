@@ -2,9 +2,9 @@
 # General
 --------------------------------------------------------------*/
 
-* {
+/* * {
 	font-family: "Courier New", Courier, monospace;
-}
+} */
 
 body {
 	/* font-family: "Open Sans", sans-serif; */
@@ -27,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-	/* font-family: "Raleway", sans-serif; */
+	font-family: "Raleway", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -239,7 +239,7 @@ h6 {
 	color: #fff;
 	margin-bottom: 50px;
 	font-size: 26px;
-	/* font-family: "Poppins", sans-serif; */
+	font-family: "Poppins", sans-serif;
 }
 #hero p span {
 	color: #fff;
@@ -364,7 +364,7 @@ section {
 .facts .count-box p {
 	padding: 15px 0 0 0;
 	margin: 0 0 0 60px;
-	/* font-family: "Raleway", sans-serif; */
+	font-family: "Raleway", sans-serif;
 	font-size: 14px;
 	color: #122f57;
 }
@@ -374,7 +374,7 @@ section {
 	margin-top: 20px;
 	color: #122f57;
 	font-size: 15px;
-	/* font-family: "Poppins", sans-serif; */
+	font-family: "Poppins", sans-serif;
 	transition: ease-in-out 0.3s;
 }
 .facts .count-box a:hover {
@@ -396,7 +396,7 @@ section {
 	text-transform: uppercase;
 	display: block;
 	font-weight: 600;
-	/* font-family: "Poppins", sans-serif; */
+	font-family: "Poppins", sans-serif;
 	color: #050d18;
 }
 .skills .progress .skill .val {
@@ -417,6 +417,10 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+/* #about-me {
+	font-family: "Open-Sans";
+} */
+
 .resume .resume-title {
 	font-size: 26px;
 	font-weight: 700;
@@ -435,7 +439,7 @@ section {
 	font-size: 18px;
 	font-weight: 600;
 	text-transform: uppercase;
-	/* font-family: "Poppins", sans-serif; */
+	font-family: "Poppins", sans-serif;
 	color: #050d18;
 	margin-bottom: 10px;
 }
