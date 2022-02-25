@@ -184,12 +184,6 @@
 										<strong>Project date</strong>: February,
 										2022
 									</li>
-									<li>
-										<strong>GitHub:</strong><br /><a
-											href="https://github.com/sidsherrill1/sidsherrill1-6291_Project1"
-											>https://github.com/sidsherrill1-6291_Project1</a
-										>
-									</li>
 								</ul>
 							</div>
 							<div class="portfolio-description">
@@ -197,20 +191,21 @@
 								<p>
 									The goal of this program is to schedule the
 									instructions a 1-wide VLIW VEX assembly file
-									to run on a 4-WIDE VLIW machine, satisying
+									to run on a 4-WIDE VLIW machine, satisfying
 									all dependencies and latency requirements.
 									The program works by reading in a text file
 									of assembly instructions and parsing each
 									instruction into its registers. It maintains
 									a HashMap of each register, recording the
 									last time that register was loaded, read, or
-									written to. It uses this map to look up the
-									last time a register was used by a prior
-									instruction and sets up a dependency between
-									the current instruction being analyzed and
-									the prior instruction. It also uses and
-									maintain resource reservation tables to
-									avoid overscheduling and minimize noops.
+									written to. The program uses this map to
+									look up the last time a register was used by
+									a prior instruction and sets up a dependency
+									between the current instruction being
+									analyzed and the prior instruction. It also
+									uses and maintain resource reservation
+									tables to avoid overscheduling and minimize
+									noops.
 								</p>
 							</div>
 						</div>
