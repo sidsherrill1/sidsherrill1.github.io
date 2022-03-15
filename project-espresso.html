@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-	<title>Sidney Sherrill Project - Ants</title>
+	<title>Sidney Sherrill Project - Android App</title>
 	<meta content="" name="description" />
 	<meta content="" name="keywords" />
 
@@ -28,6 +28,9 @@
 
 	<!-- Template Main CSS File -->
 	<link href="assets/css/style.css" rel="stylesheet" />
+
+	<!-- =======================================================
+  ======================================================== -->
 </head>
 
 <body>
@@ -108,24 +111,15 @@
 				<div class="row gy-4">
 					<div class="col-lg-5">
 						<div class="portfolio-details-slider swiper">
-							<!-- <div class="swiper-wrapper align-items-center"> -->
-							<div>
-								<div class="swiper-slide">
-									<div style="
-												position: relative;
-												padding-bottom: 56.25%;
-												height: 0;
-											">
-										<iframe src="https://www.loom.com/embed/ede3a9c379514bbbab707e22ae56cea5"
-											frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
-											style="
-													position: absolute;
-													top: 0;
-													left: 0;
-													width: 100%;
-													height: 100%;
-												"></iframe>
-									</div>
+							<div class="swiper-wrapper align-items-center">
+								<div>
+									<!-- <div class="swiper-slide"> -->
+									<center>
+										<video autobuffer="autobuffer" autoplay="autoplay" loop="loop"
+											controls="controls" width="100%">
+											<source src="assets/img/portfolio/EspressoTest.mp4" />
+										</video>
+									</center>
 								</div>
 							</div>
 							<div class="swiper-pagination"></div>
@@ -137,26 +131,35 @@
 							<h3>Project information</h3>
 							<ul>
 								<li>
-									<strong>Category</strong>: WPF.NET App
+									<strong>Category</strong>: App Development
 								</li>
-								<li><strong>Language</strong>: C#</li>
+								<li><strong>Language</strong>: Java, xml</li>
 								<li>
-									<strong>Project date</strong>: January,
-									2022
-								</li>
-								<li>
-									<strong>GitHub:</strong><br /><a
-										href="https://github.com/sidsherrill1/Ants">https://github.com/sidsherrill1/Ants</a>
+									<strong>Project date</strong>: March, 2022
 								</li>
 							</ul>
 						</div>
 						<div class="portfolio-description">
-							<h2>Ant Colony Optimization Algorithm</h2>
+							<h2>Android App Development and Testing</h2>
 							<p>
-								In this project, I built a WPF app using the .NET framework to represent ants and how
-								they move and interact in their search for food. Their speed, focus, search window, and
-								pheromones change depending on their proximity to food or other ants.
-							</p>
+								The goal of this project was to plan, design, build, and test a simple Android app
+								prototype using Android studio. The planning stages of this project included gathering
+								all app requirements and building documentation for a development plan, a test plan,
+								use cases, and a user manual.</p>
+							<p>
+								Testing was emphasized throughout the development process and included unit,
+								integration, and system-wide black box and white box testing. Black box was performed by
+								way of the Category Partitioning method, where each module of the app was examined to
+								identify independently testable features. These features were used to identify relevant
+								inputs and derive test case specs. Finally, the test case specs were used to generate
+								test cases.
+							<p>
+								White box testing was performed with the goal of 85% Modified Condition/Decision
+								Coverage. All code was reviewed to identify combinations of conditions with the
+								requirement that each condition independently affects the decision outcome.</p>
+							<p>
+								As seen in the video, JUnit and Espresso testing frameworks were used to automate
+								testing wherever possible.</p>
 						</div>
 					</div>
 				</div>
