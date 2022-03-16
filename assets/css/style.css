@@ -6,6 +6,14 @@
 	font-family: "Courier New", Courier, monospace;
 }
 
+p {
+	font-size: 14px;
+}
+
+li {
+	font-size: 12px;
+}
+
 body {
 	/* font-family: "Open Sans", sans-serif; */
 	color: #272829;
@@ -331,8 +339,9 @@ section {
 	color: #149ddd;
 	line-height: 0;
 }
-.about .content p:last-child {
+.about p {
 	margin-bottom: 0;
+	font-size: 14px;
 }
 
 /*--------------------------------------------------------------
@@ -470,6 +479,10 @@ section {
 	top: 0;
 	background: #fff;
 	border: 2px solid #1f5297;
+}
+
+.resume-item p {
+	font-size: 12px;
 }
 
 /*--------------------------------------------------------------
