@@ -110,10 +110,11 @@
 						<div class="portfolio-details-slider swiper">
 							<div>
 								<div class="swiper-slide">
-									<img src="assets/img/portfolio/scheduler/dependencies.png" alt="" />
+									<img src="assets/img/portfolio/scheduler/dependencies.png" alt="" height="50%">
 								</div>
 							</div>
-							<div class="swiper-pagination"></div>
+							<div class=" swiper-pagination">
+							</div>
 						</div>
 					</div>
 
@@ -135,24 +136,32 @@
 						<div class="portfolio-description">
 							<h2>VLIW Scheduler</h2>
 							<p>
-								The goal of this program is to schedule the instructions a 1-wide VLIW VEX assembly file
-								to run on a 4-wide VLIW machine, satisfying all dependencies and latency requirements.
+								The goal of this program is to schedule the instructions a 1-wide VLIW VEX assembly
+								file
+								to run on a 4-wide VLIW machine, satisfying all dependencies and latency
+								requirements.
 								The program can schedule the instructions according to the following 6 different
 								heuristics:</p>
 
 							<ol>
 								<li>
-									<strong>Source</strong>: Ties between instructions are broken by which instruction
-									is earlier in program source order. Any further ties are broken using source order.
+									<strong>Source</strong>: Ties between instructions are broken by which
+									instruction
+									is earlier in program source order. Any further ties are broken using source
+									order.
 								</li>
 								<li><strong>Critical Path - Source</strong>: Ties between instructions are broken by
 									which instruction is part of a greater height, where height is defined as the
-									longest path in the data dependence graph originating from that node. Any further
-									ties are broken using source order. Any further ties are broken using source order.
+									longest path in the data dependence graph originating from that node. Any
+									further
+									ties are broken using source order. Any further ties are broken using source
+									order.
 								</li>
-								<li><strong>Resource - Source</strong>: Ties between instructions are broken by which
+								<li><strong>Resource - Source</strong>: Ties between instructions are broken by
+									which
 									instruction
-									uses resources with higher criticality, where criticality is defined ratio of the
+									uses resources with higher criticality, where criticality is defined ratio of
+									the
 									number
 									of instructions that use that resource to the number of resources available. Any
 									further
@@ -161,28 +170,37 @@
 									instruction has
 									a higher fan-out, where fan-out is defined as the number of immediate edges to
 									dependent
-									instructions. It implies that you should schedule those instructions that have more
+									instructions. It implies that you should schedule those instructions that have
+									more
 									instructions dependent on them earlier than those which have lesser number of
 									dependent
-									instructions. The motivation here is to minimize the number of blocked instructions
+									instructions. The motivation here is to minimize the number of blocked
+									instructions
 									due
 									to dependencies. Any further ties are broken using source order.</li>
-								<li><strong>Critical Path - Resource - Source</strong>: Ties are broken first using the
+								<li><strong>Critical Path - Resource - Source</strong>: Ties are broken first using
+									the
 									critical
 									path metric, then resource consumption metric, followed finally by source.</li>
-								<li><strong>Critical Path - Fan-Out - Source</strong>: Ties are broken first using the
+								<li><strong>Critical Path - Fan-Out - Source</strong>: Ties are broken first using
+									the
 									critical path
 									metric, then fan-out metric, followed finally by source.</li>
 							</ol>
 
 							<p>
 								The program works by reading in a text file of assembly instructions and building
-								objects out of each instruction, where the object contains information about the type of
-								instruction, it’s required functional unit, and its registers. The program maintains a
-								HashMap of each register, recording when the register was loaded, read, or written to.
+								objects out of each instruction, where the object contains information about the
+								type of
+								instruction, it’s required functional unit, and its registers. The program maintains
+								a
+								HashMap of each register, recording when the register was loaded, read, or written
+								to.
 								As the instructions are read in, the register map is used to build data and memory
-								dependencies between the instructions. After all the instructions are read in and their
-								dependencies established, the instructions are scheduled according to whatever heuristic
+								dependencies between the instructions. After all the instructions are read in and
+								their
+								dependencies established, the instructions are scheduled according to whatever
+								heuristic
 								was specified.
 							</p>
 
